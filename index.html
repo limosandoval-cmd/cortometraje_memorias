@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOSOTROS | Cortometraje</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0a0a0f;
+    color:white;
+    line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),
+    url("hero.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:5rem;
+    letter-spacing:8px;
+    color:#7df9ff;
+    text-shadow:0 0 20px #00ffff;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:1.4rem;
+    color:#d9d9d9;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 30px;
+    background:#00ffff;
+    color:black;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 20px #00ffff;
+}
+
+/* SECCIONES */
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:90px 25px;
+}
+
+h2{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:30px;
+    color:#7df9ff;
+}
+
+/* SINOPSIS */
+
+.sinopsis{
+    text-align:center;
+}
+
+.logline{
+    font-style:italic;
+    color:#9ee7ff;
+    margin-bottom:25px;
+}
+
+/* VIDEO */
+
+.video-container{
+    position:relative;
+    width:100%;
+    padding-bottom:56.25%;
+    overflow:hidden;
+    border-radius:15px;
+}
+
+.video-container iframe{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+
+/* GALERIA */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.04);
+}
+
+/* FICHA TECNICA */
+
+.tech{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#111827;
+    padding:25px;
+    border-radius:15px;
+    border:1px solid rgba(0,255,255,.2);
+}
+
+.card h3{
+    color:#7df9ff;
+    margin-bottom:10px;
+}
+
+/* CREDITOS */
+
+.creditos{
+    text-align:center;
+}
+
+.logos{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.logos img{
+    height:100px;
+    background:white;
+    padding:10px;
+    border-radius:10px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#050505;
+    border-top:1px solid rgba(255,255,255,.1);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero p{
+    font-size:1.1rem;
+}
+
+h2{
+    font-size:2rem;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="hero">
+        <h1>NOSOTROS</h1>
+        <p>¿Hasta dónde llegarías para volver a escuchar a quien perdiste?</p>
+        <a href="#video" class="btn">Ver Cortometraje</a>
+    </div>
+</header>
+
+<section class="sinopsis">
+    <h2>Sinopsis</h2>
+
+```
+<p class="logline">
+    En un futuro dominado por la inteligencia artificial,
+    una joven intenta reconstruir digitalmente a la persona que perdió,
+    enfrentándose a las consecuencias emocionales de desafiar el duelo.
+</p>
+
+<p>
+    Valeria, una estudiante brillante obsesionada con la tecnología,
+    dedica meses a desarrollar un sistema capaz de recrear la conciencia
+    digital de Adrián, la persona que más amó. Utilizando fotografías,
+    videos y grabaciones de voz, intenta devolverlo a la vida mediante
+    inteligencia artificial. Lo que comienza como un experimento termina
+    convirtiéndose en un viaje emocional que la obliga a cuestionar los
+    límites entre la memoria, el amor y la realidad.
+</p>
+```
+
+</section>
+
+<section id="video">
+    <h2>Cortometraje</h2>
+
+```
+<div class="video-container">
+    <iframe
+    src="https://www.youtube.com/embed/VIDEO_ID"
+    title="Cortometraje Nosotros"
+    frameborder="0"
+    allowfullscreen>
+    </iframe>
+</div>
+```
+
+</section>
+
+<section>
+    <h2>Galería</h2>
+
+```
+<div class="gallery">
+    <img src="img/valeria.jpg" alt="Valeria">
+    <img src="img/adrian.jpg" alt="Adrián">
+    <img src="img/habitacion.jpg" alt="Habitación">
+    <img src="img/escena1.jpg" alt="Escena">
+    <img src="img/escena2.jpg" alt="Escena">
+    <img src="img/escena3.jpg" alt="Escena">
+</div>
+```
+
+</section>
+
+<section>
+    <h2>Ficha Técnica</h2>
+
+```
+<div class="tech">
+
+    <div class="card">
+        <h3>Duración</h3>
+        <p>1 minuto</p>
+    </div>
+
+    <div class="card">
+        <h3>Género</h3>
+        <p>Ciencia ficción distópica</p>
+    </div>
+
+    <div class="card">
+        <h3>Formato</h3>
+        <p>Cortometraje digital</p>
+    </div>
+
+    <div class="card">
+        <h3>Herramientas</h3>
+        <p>Canva IA, CapCut, ElevenLabs y herramientas de IA generativa.</p>
+    </div>
+
+    <div class="card">
+        <h3>Producción</h3>
+        <p>Junio 2026</p>
+    </div>
+
+</div>
+```
+
+</section>
+
+<section class="creditos">
+    <h2>Créditos</h2>
+
+```
+<p><strong>Autor:</strong> TU NOMBRE COMPLETO</p>
+<p><strong>Asesor:</strong> César Octavio Guerra Guerrero</p>
+<p><strong>Institución:</strong> Universidad Autónoma del Carmen</p>
+<p><strong>Programa:</strong> IDM</p>
+
+<div class="logos">
+    <img src="img/unacar.png" alt="UNACAR">
+    <img src="img/idm.png" alt="IDM">
+</div>
+```
+
+</section>
+
+<footer>
+    <p>© 2026 - Cortometraje NOSOTROS</p>
+</footer>
+
+</body>
+</html>
